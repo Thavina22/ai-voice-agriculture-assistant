@@ -30,9 +30,10 @@ export const Settings: React.FC = () => {
               <input
                 type="text"
                 readOnly
-                value="http://127.0.0.1:8000/api/v1/voice/incoming"
+                value={`${import.meta.env.VITE_API_URL || 'https://krishi-mitra-ai-backend.onrender.com'}/api/v1/voice/incoming`}
                 className="w-full p-2.5 rounded-xl bg-gray-50 dark:bg-dark-bg border border-gray-200 dark:border-dark-border font-mono text-gray-800 dark:text-gray-200"
               />
+
             </div>
 
             <div className="grid grid-cols-2 gap-3">
