@@ -13,11 +13,11 @@
 
 ---
 
-## 🌟 The Problem & Impact
+## The Problem & Impact
 
 Over **140 million farmers** in India face crop yield losses of up to **35%** annually due to delayed disease diagnosis and limited access to agricultural experts. Existing AI solutions rely on smartphones and text apps, leaving out smallholder farmers who primarily rely on voice calls and regional language dialects.
 
-### 💡 The Solution: Krishi Mitra AI
+### The Solution: Krishi Mitra AI
 - **No Smartphone Required**: Farmers place a standard phone call to a Twilio toll-free number.
 - **Multi-Lingual IVR**: Touch-tone language selection for **Tamil (தமிழ்)**, **English**, and **Telugu (తెలుగు)**.
 - **Speech-to-Text & RCA Engine**: Converts spoken dialect audio into text and executes a deterministic **Root Cause Analysis (RCA)** rule matrix across MVP crops (**Tomato**, **Paddy**, **Chilli**).
@@ -25,7 +25,7 @@ Over **140 million farmers** in India face crop yield losses of up to **35%** an
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```mermaid
 graph TD
@@ -56,7 +56,7 @@ graph TD
 
 ---
 
-## 🔄 End-to-End Voice Consultation Workflow
+## End-to-End Voice Consultation Workflow
 
 ```mermaid
 sequenceDiagram
@@ -85,7 +85,7 @@ sequenceDiagram
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 1. **Deterministic RCA Engine**:
    - Evaluates disease confidence scores for **Tomato** (*Early Blight, Late Blight, Leaf Curl*), **Paddy** (*Blast, Brown Spot, Stem Borer*), and **Chilli** (*Anthracnose, Mildew, Aphids*).
@@ -101,7 +101,7 @@ sequenceDiagram
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Layer | Technologies Used |
 | :--- | :--- |
@@ -114,7 +114,7 @@ sequenceDiagram
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -157,7 +157,7 @@ sequenceDiagram
 
 ---
 
-## ⚡ Quick Start & Local Setup
+## Quick Start & Local Setup
 
 ### Prerequisites
 - Python 3.11+
@@ -203,7 +203,7 @@ npm run dev
 
 ---
 
-## 🔌 API Endpoint Matrix
+## API Endpoint Matrix
 
 | Method | Endpoint | Description | Path Alias |
 | :--- | :--- | :--- | :--- |
@@ -218,14 +218,6 @@ npm run dev
 | `GET` | `/api/v1/dashboard/schemes` | Government agricultural schemes & insurance info | `/dashboard/schemes` |
 | `GET` | `/api/v1/dashboard/knowledge` | MVP crop disease rules matrix | `/dashboard/knowledge` |
 | `GET` | `/api/v1/dashboard/ai-status` | AI engine health, model latency, and TTS status | `/dashboard/ai-status` |
-
----
-
-## 🏆 Hackathon Architectural Best Practices
-
-- **Zero Hardcoded Secrets**: All Twilio SID, Auth Token, and Gemini API keys are loaded via Pydantic Settings from `.env`.
-- **Explainable AI (XAI)**: Rule-based RCA guarantees non-hallucinatory disease diagnosis before LLM natural language synthesis.
-- **Fail-Safe Telephony**: Graceful fallback responses ensure callers never experience dead air even during network outages.
 
 ---
 
