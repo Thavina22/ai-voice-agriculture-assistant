@@ -1,0 +1,35 @@
+{
+ "crop": "Tomato",
+ "disease": "Early Blight",
+
+ "keywords":[
+   "brown spots",
+   "black marks",
+   "dry leaves"
+ ],
+
+ "symptoms":[
+   "dark brown spots",
+   "yellow rings"
+ ],
+
+ "severity":"medium",
+
+ "simple_explanation":
+ "A fungal disease that affects tomato leaves.",
+
+ "cause":
+ "Alternaria fungal infection",
+
+ "treatment":[
+   "Remove affected leaves",
+   "Use recommended fungicide"
+ ],
+
+ "prevention":[
+   "Avoid excess moisture",
+   "Maintain spacing"
+ ],
+
+ "confidence":0.85
+}
